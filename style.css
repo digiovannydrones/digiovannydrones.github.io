@@ -1,0 +1,53 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#background
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#drone-box
+{
+    margin: 150px auto;
+    width: 200px;
+    transition: 2s;
+    position: relative;
+}
+
+.drone-img
+{
+    width: 100%;
+}
+
+.drone-left
+{
+    width: 80px;
+    position: absolute;
+    left: -11px;
+    top: 0px;
+    animation: rotation .2s linear infinite;
+}
+
+.drone-right
+{
+    width: 80px;
+    position: absolute;
+    right: -11px;
+    top: 0px;
+    animation: rotation .2s linear infinite;
+}
+
+@keyframes rotation
+{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
